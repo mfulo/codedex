@@ -10,22 +10,25 @@
 5. Initialize local repo and create a .git in your project folder
    ```
    git init
+   ```
 6. Add connection to remote repo
    ```
    git remote add origin <repository_url>
+   ```
 7. Rename the branch where code will be pushed to
    ```
    git branch -M main
+   ```
 8. Check connectivity between remote and local repos
    ```
    git branch
    ```
-   > If you see ```main``` in the output, you're all set! 👌
+   > If you see `main` in the output, you're all set! 👌
 
 <br>
 
 ### Problems encountered
-After step 8, I didn't see the ```main``` in the output so I repeated steps 5 and 6, but says ```error: remote origin already exists```.
+After step 8, I didn't see the `main` in the output so I repeated steps 5 and 6, but says `error: remote origin already exists`.
 I tried to run the following and it worked:
 ```
 git add .
@@ -46,7 +49,7 @@ These are the right steps:
    ```
    git branch -M main
    ```
-   > ```-M``` means rename/move
+   > `-M` means rename/move
 
    > By default, local branch name is "master"
 7. Stage files
@@ -68,7 +71,7 @@ These are the right steps:
     ```
     > ex: git push -u origin main
     
-    > the adding of ```-u``` sets the "default shipping address" so you can readily use ```git push``` or ```git pull``` next time without specifying the remote and local branch
+    > the adding of `-u` sets the "default shipping address" so you can readily use `git push` or `git pull` next time without specifying the remote and local branch
 
 -----
 ## 08. Branch Out

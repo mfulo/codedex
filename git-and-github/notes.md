@@ -71,5 +71,21 @@ These are the right steps:
     > the adding of ```-u``` sets the "default shipping address" so you can readily use ```git push``` or ```git pull``` next time without specifying the remote and local branch
 
 -----
+## 08. Branch Out
+Branching is like forking but inside your repository.
+
+To create a new branch
+```
+git branch <new_branch_name>
+```
+To switch branches
+```
+git switch <branch_name>
+```
+To create and switch to that branch
+```
+git checkout -b <new_branch_name>
+```
+-----
 
 

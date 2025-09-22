@@ -2,7 +2,7 @@
 
 ## 03. Git Commands
 
-### Steps to connect remote and local repositories
+### 📚 Steps to connect remote and local repositories
 1. Create remote repo in GitHub
 2. Copy repo's HTTPS
 3. Open local repo in a code editor of your choice (I'll be using VS Code too)
@@ -27,19 +27,21 @@
 
 <br>
 
-### Problems encountered
+### 😱 Problem encountered
 After step 8, I didn't see the `main` in the output so I repeated steps 5 and 6, but says `error: remote origin already exists`.
 I tried to run the following and it worked:
-```
-git add .
-git commit -m "<message>"
-git push origin main
-```
+   ```
+   git add .
+   git commit -m "<message>"
+   git push origin main
+   ```
 
 <br>
 
-### Upon further research...
+### 🧐 Upon further research...
 These are the right steps:
+
+Repeat steps 1-4 above.
 
 5. Initialize local repo and create a .git in your project folder
    ```
@@ -73,22 +75,62 @@ These are the right steps:
     
     > the adding of `-u` sets the "default shipping address" so you can readily use `git push` or `git pull` next time without specifying the remote and local branch
 
+<br>
+
 -----
 ## 08. Branch Out
 Branching is like forking but inside your repository.
 
 To create a new branch
-```
-git branch <new_branch_name>
-```
+   ```
+   git branch <new_branch_name>
+   ```
 To switch branches
-```
-git switch <branch_name>
-```
+   ```
+   git switch <branch_name>
+   ```
+   > or: git checkout <branch_name>
+
 To create and switch to that branch
-```
-git checkout -b <new_branch_name>
-```
+   ```
+   git checkout -b <new_branch_name>
+   ```
+   > or: git switch -c <branch_name>
+
+<br>
+
 -----
+## 10. Merges
 
+Merging is taking changes from branch_A to your current branch
+   ```
+   git merge <branch_A>
+   ```
 
+<br>
+
+✅ Best practice to merge changes when working in a team: 
+> assuming your team is using remote and you're working locally
+
+1. Switch to main
+   ```
+   git switch main
+   ```
+2. Make sure your local main is up to date with remote main
+   ```
+   git pull origin main
+   ```
+   > git pull = git fetch + git merge
+   
+3. Merge your feature branch to main
+   ```
+   git merge <feature_branch>
+   ```
+4. Update remote main with local main
+   ```
+   git push origin main
+   ```
+   
+<br>
+
+-----

@@ -1,9 +1,9 @@
 <h1 align="center"> Course: Git & GitHub </h1>
 
 ## Table of contents
-- [03. Git Commands](#03.-git-commands)
-- [08. Branch Out](#08.branch-out)
-- [10. Merges](#merges)
+- [03. Git Commands](#03-git-commands)
+- [08. Branch Out](#08-branch-out)
+- [10. Merges](#10-merges)
 
 <br>
 

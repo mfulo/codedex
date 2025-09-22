@@ -83,10 +83,10 @@ Repeat steps 1-4 above.
     
     > the adding of `-u` sets the "default shipping address" so you can readily use `git push` or `git pull` next time without specifying the remote and local branch
 
-<br>
+[^](#table-of-contents)
 
 -----
-## 08. Branch Out
+## 08. Branch Out 
 Branching is like forking but inside your repository.
 
 To create a new branch
@@ -104,8 +104,8 @@ To create and switch to that branch
    git checkout -b <new_branch_name>
    ```
    > or: git switch -c <branch_name>
-
-<br>
+   
+[^](#table-of-contents)
 
 -----
 ## 10. Merges
@@ -138,7 +138,6 @@ Merging is taking changes from branch_A to your current branch
    ```
    git push origin main
    ```
-   
-<br>
+[^](#table-of-contents)
 
 -----

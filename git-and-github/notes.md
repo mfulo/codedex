@@ -10,7 +10,7 @@
 -----
 ## 03. Git Commands
 
-### 📚 Steps to connect remote and local repositories
+### 🌐 Steps to connect remote and local repositories
 1. Create remote repo in GitHub
 2. Copy repo's HTTPS
 3. Open local repo in a code editor of your choice (I'll be using VS Code too)
@@ -46,7 +46,7 @@ I tried to run the following and it worked:
 
 <br>
 
-### 🧐 Upon further research...
+### 🔎 Upon further research...
 These are the right steps:
 
 Repeat steps 1-4 above.
@@ -139,5 +139,3 @@ Merging is taking changes from branch_A to your current branch
    git push origin main
    ```
 [^](#table-of-contents)
-
------
